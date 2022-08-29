@@ -57,6 +57,9 @@ def main ():
   global x, y, w, h, last_enemy_pos
   print("\n\n\n")
 
+
+  pyautogui.PAUSE = 0.05
+
   print("Loading reference images")
   bit_img = cv2.imread(r"ref_images\bit.png", cv2.IMREAD_COLOR)
   flipped_bit_img = cv2.imread(r"ref_images\flipped_bit.png", cv2.IMREAD_COLOR)
